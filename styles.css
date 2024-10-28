@@ -41,7 +41,7 @@ body {
 /* Батырмалар стилі */
 .buttons {
     display: flex;
-    gap: 200px; /* Батырмалар арасындағы аралық */
+    gap: 110px; /* Батырмалар арасындағы аралық */
     margin-top: 10px;
 }
 
@@ -50,7 +50,7 @@ body {
     background-color: transparent; /* Фон түсі жоқ */
     color: white; /* Мәтіннің түсі */
     border: none; /* Контурды алып тастау */
-    border-radius: 150px;
+    border-radius: 100px;
     cursor: pointer;
     font-size: 1.2em; /* Батырмалар шрифтінің өлшемі */
     transition: background-color 0.5s; /* Анимация */
@@ -65,7 +65,7 @@ body {
     display: flex;
     justify-content: center; /* Суреттерді ортасында орналастыру */
     gap: 130px; /* Суреттер арасындағы арақашықтық */
-    margin: 50px 160px; /* Жоғарыдан және төменнен 50px, солдан және оңнан 20px */
+    margin: 50px 165px; /* Жоғарыдан және төменнен 50px, солдан және оңнан 20px */
     flex-wrap: wrap; /* Суреттердің қатарға сыймау жағдайы */
 }
 
@@ -100,6 +100,11 @@ body {
     font-size: 1em;
     transition: background-color 0.3s; /* Батырманың анимациясы */
 }
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
 
 .download-button:hover {
     background-color: #45a049;
