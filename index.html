@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookLand 2.0</title>
+    <title>BookLand</title>
     <link rel="stylesheet" href="styles.css"> <!-- CSS файлын қосу -->
     <script src="script.js" defer></script> <!-- JavaScript файлын қосу -->
 </head>
-   <!-- Жоғарғы жазу -->
-    <div class="header">BookLand 2.0
-        <button class="small-button" onclick="openMessage()">Повесттер</button>
-        <button class="small-button" onclick="openMessage()">Романдар</button>
-        <button class="small-button" onclick="openMessage()">Тарихи кітаптар</button>
+<body>
+    <!-- Жоғарғы жазу -->
+    <div class="header">
+        <div class="title-container">
+            <span class="title">BookLand 2.0</span>
+            <div class="author">Сайт авторы: Жетес Сұлтан</div>
+        </div>
+        <div class="buttons">
+            <button class="small-button" onclick="openMessage()">Повесттер</button>
+            <button class="small-button" onclick="openMessage()">Романдар</button>
+            <button class="small-button" onclick="openMessage()">Тарихи кітаптар</button>
+        </div>
     </div>
-
     <!-- Кітап обложка суреттері - Бірінші қатар -->
     <div class="cover-images">
         <div class="cover-container">
@@ -45,6 +51,6 @@
             <a href="files/(pdf) Бір кем дүние (Шерхан Мұртаза).pdf" download class="download-button">Онлайн оқу</a>
         </div>
     </div>
-
 </body>
 </html>
+
