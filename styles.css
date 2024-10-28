@@ -1,28 +1,28 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Сол жақта туралау */
+    align-items: center;
     font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('files/pexels-rickyrecap-1907785.jpg'); /* Фон суреті */
-    background-size: cover; /* Фонды толығымен жапсыру */
-    background-position: center; /* Ортасына орналастыру */
-    color: white; /* Мәтіннің түсі */
+    background-image: url('files/pexels-rickyrecap-1907785.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 /* Жоғарғы жазу стилі */
 .header {
     display: flex;
-    align-items: flex-start; /* Сол жақта туралау */
-    gap: 20px; /* BookLand 2.0 мен батырмалар арасындағы аралық */
+    flex-direction: column; /* Баған түрінде орналастыру */
+    align-items: flex-start; /* Сол жаққа туралау */
     margin: 20px;
 }
 
-/* Жазу контейнері */
 .title-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start; /* Сол жақта орналастыру */
 }
 
 .title {
@@ -32,45 +32,42 @@ body {
 }
 
 .author {
-    font-size: 1.4em; /* Сайт авторы жазуының өлшемі */
+    font-size: 1em; /* Сайт авторы жазуының өлшемі */
     margin-top: 5px;
-    font-weight: bold; /* Жазуды қалың ету */
+    font-weight: bold; /* Қалың етіп көрсету */
 }
-
 
 /* Батырмалар стилі */
 .buttons {
     display: flex;
-    gap: 110px; /* Батырмалар арасындағы аралық */
+    gap: 15px; /* Батырмалар арасындағы аралық */
     margin-top: 10px;
 }
 
 .small-button {
-    padding: 20px 30px; /* Батырмалардың ішкі кеңістігі */
-    background-color: transparent; /* Фон түсі жоқ */
-    color: white; /* Мәтіннің түсі */
-    border: none; /* Контурды алып тастау */
-    border-radius: 100px;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 1.2em; /* Батырмалар шрифтінің өлшемі */
-    transition: background-color 0.5s; /* Анимация */
+    transition: background-color 0.3s;
 }
 
 .small-button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Ш鼠ше, фон түсі өзгереді */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Суреттер бөлімі */
+/* Кітап обложка суреттері */
 .cover-images {
     display: flex;
-    justify-content: center; /* Суреттерді ортасында орналастыру */
-    gap: 130px; /* Суреттер арасындағы арақашықтық */
-    margin: 50px 165px; /* Жоғарыдан және төменнен 50px, солдан және оңнан 20px */
+    justify-content: center;
+    gap: 20px; /* Суреттер арасындағы арақашықтық */
+    margin-top: 50px; /* Жоғарыдан арақашықтық */
     flex-wrap: wrap; /* Суреттердің қатарға сыймау жағдайы */
 }
 
-
-/* Сурет стилі */
 .cover-container {
     display: flex;
     flex-direction: column;
@@ -103,6 +100,35 @@ body {
 
 .download-button:hover {
     background-color: #45a049;
+}
+
+/* Жауапты дизайн үшін медиа сұраулар */
+@media (max-width: 768px) {
+    .header {
+        align-items: center; /* Ортасына орналастыру */
+    }
+
+    .buttons {
+        flex-direction: column; /* Кішкентай экрандарда батырмаларды баған түрінде көрсету */
+        align-items: center; /* Ортасына орналастыру */
+    }
+
+    .title {
+        font-size: 2em; /* Мәтіннің өлшемін кішірейту */
+    }
+
+    .author {
+        font-size: 0.9em; /* Автордың мәтінінің өлшемін кішірейту */
+    }
+
+    .small-button {
+        font-size: 1em; /* Батырманың өлшемін кішірейту */
+    }
+
+    .cover-container img {
+        width: 100%; /* Суреттің ені 100% */
+        height: auto; /* Биіктікті автоматты түрде көрсету */
+    }
 }
 
 
