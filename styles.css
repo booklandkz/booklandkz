@@ -63,7 +63,7 @@ body {
 .cover-images {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Суреттер арасындағы арақашықтық */
+    gap: 100px; /* Суреттер арасындағы арақашықтық */
     margin-top: 50px; /* Жоғарыдан арақашықтық */
     flex-wrap: wrap; /* Суреттердің қатарға сыймау жағдайы */
 }
