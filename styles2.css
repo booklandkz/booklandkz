@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('files/ai-generated-8726156_1280.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: #f5f5f5;
+    height: 100vh;
+    backdrop-filter: blur(5px); /* Фонды сәл бұлыңғыр етіп көрсету */
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Жартылай мөлдір фон қосу */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Жұмсақ көлеңке қосу */
+    margin-top: 20px;
+}
+
+.header button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50; /* Түсті өзгерту */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.3s; /* Түсті ауыстыру анимациясы */
+}
+
+.header button:hover {
+    background-color: #388E3C; /* Батырма үстіне келгендегі түс */
+}
+
+.header .club-name {
+    margin-top: 20px;
+    font-size: 2.5em; /* Жазу көлемі */
+    font-weight: bold;
+    animation: slideIn 1s;
+    color: #E0F7FA; /* Жұмсақ ақшыл түс */
+}
+
+.container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Жұмсақ ақ қабат */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    color: #E0F7FA; /* Жұмсақ ақшыл түс */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s;
+}
+
+.container h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.author {
+    margin-top: 5px;
+    font-size: 1.4em;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.club-image {
+    width: 500px;
+    margin-top: 60px;
+    position: absolute;
+    left: 50px;
+    top: 5;
+    border-radius: 10px; /* Суреттің бұрыштарын дөңгелектеу */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Суретке көлеңке қосу */
+    animation: fadeIn 2s;
+}
+
+.club-info {
+    border-radius: 10px; /* Бұрыштарын дөңгелектеу */
+    padding: 20px; /* Ішкі аралық */
+    margin: 20px; /* Сыртқы аралық */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Жұмсақ көлеңке */
+    animation: fadeIn 2s; /* Появление анимациясы */
+    position: absolute; /* Текстті суреттің үстінде орналастыру */
+    left: 580px; /* Оңға жылжыту үшін мәнді өзгертіңіз */
+    top: 150px; /* Тексттің жоғарғы жағындағы аралық */
+}
+
+.club-info h2 {
+    font-size: 2em; /* Тақырыптың көлемі */
+    color: white; /* Түс */
+    margin-bottom: 10px; /* Тақырып пен мәтін арасындағы аралық */
+}
+
+.club-info p {
+    font-size: 1.2em; /* Мәтін көлемі */
+    line-height: 1.6; /* Жол аралығы */
+    color: white; /* Жұмсақ сұр түс */
+}
+
+.team {
+    text-align: center; /* Ортасына орналастыру */
+    margin-top: 600px; /* Жоғарыдан аралық */
+}
+
+.team h2 {
+    font-size: 2.5em; /* Тақырып көлемі */
+    margin-bottom: 10px; /* Тақырып пен фотолар арасындағы аралық */
+    color: white; /* Түс */
+}
+
+.team-members {
+    display: flex; /* Жол бойынша орналастыру */
+    justify-content: center; /* Ортасына орналастыру */
+    flex-wrap: nowrap; /* Бір жолда орналастыру */
+    margin-top: 20px; /* Суреттер мен клуб туралы ақпарат арасындағы аралық */
+}
+
+.member {
+    margin: 5px 50px; /* Суреттер арасындағы және үстінен төменгі аралық */
+    text-align: center; /* Аттарды ортасына орналастыру */
+}
+
+.member-photo {
+    width: 200px; /* Суреттің ені */
+    height: 350px; /* Суреттің биіктігі */
+    object-fit: cover; /* Суреттің өлшемін сақтау үшін */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Жұмсақ көлеңке */
+    transition: transform 0.3s; /* Анимация эффектісі */
+    margin-top: 10px; /* Суреттер мен клуб туралы ақпарат арасындағы аралық */
+}
+
+
+.member-photo:hover {
+    transform: scale(1.1); /* Суретке келгенде үлкейту */
+}
+
+.member-name {
+    margin-top: 10px; /* Ат пен сурет арасындағы аралық */
+    font-size: 1.2em; /* Ат көлемі */
+    color: white; /* Жұмсақ сұр түс */
+    font-weight: bold;
+}
+
+.video-container {
+    position: relative; /* Видеоның контекстін позициялау */
+    text-align: center; /* Ортасына орналастыру */
+    margin-top: 80px; /* Жоғарыдан аралық */
+}
+
+.video-overlay {
+    position: absolute; /* Текстті видеоның үстінде орналастыру */
+    top: -10%; /* Тексттің вертикалды ортасы */
+    left: 50%; /* Тексттің горизонталды ортасы */
+    transform: translate(-50%, -50%); /* Ортасында орналастыру */
+    color: white; /* Текст түсі */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Тексттің көлеңкесі */
+    z-index: 20; /* Текстті видеоның үстінде орналастыру */
+}
+
+.video-overlay h2 {
+    font-size: 2em; /* Заголовок көлемі */
+    margin: 0; /* Шеттерін жою */
+}
+
+.video-overlay p {
+    font-size: 1.2em; /* Мәтін көлемі */
+    margin-top: 1px; /* Жоғарыдан аралық */
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
