@@ -118,16 +118,18 @@ body {
 }
 
 .team-members {
-    display: flex; /* Жол бойынша орналастыру */
+    display: flex; /* Flexbox-ты қосу */
+    flex-direction: row; /* Суреттерді қатар орналастыру */
     justify-content: center; /* Ортасына орналастыру */
-    flex-wrap: nowrap; /* Бір жолда орналастыру */
-    margin-top: 20px; /* Суреттер мен клуб туралы ақпарат арасындағы аралық */
+    flex-wrap: wrap; /* Суреттерді төменге түсірмей, қажеттілікке қарай орау */
 }
 
 .member {
-    margin: 5px 50px; /* Суреттер арасындағы және үстінен төменгі аралық */
+    margin: 5px; /* Суреттер арасындағы аралық */
     text-align: center; /* Аттарды ортасына орналастыру */
+    flex: 1 1 200px; /* Суреттердің минималды ені 200px, ал қалған кеңістікті толықтырады */
 }
+
 
 .member-photo {
     width: 200px; /* Суреттің ені */
@@ -187,18 +189,13 @@ body {
     to { transform: translateX(0); opacity: 1; }
 }
 
+@media (max-width: 768px) {
     .team-members {
-        flex-direction: column; /* Суреттерді тік орналастыру */
-        align-items: center; /* Ортасына орналастыру */
+        flex-direction: row; /* Кішкентай экрандарда да қатар орналастыру */
     }
-}
-.team-members {
-    display: flex;
-    flex-direction: column; /* Тік орналастыру */
-    align-items: center; /* Ортасына орналастыру */
-}
-.member-photo {
-    width: 90%; /* Экранның 90% ені */
-    height: auto; /* Биіктікті автоматты түрде анықтау */
+
+    .member {
+        flex: 1 1 100px; /* Минималды ені 100px */
+    }
 }
 
