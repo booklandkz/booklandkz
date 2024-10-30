@@ -187,24 +187,18 @@ body {
     to { transform: translateX(0); opacity: 1; }
 }
 
-/* Жауапты дизайн үшін */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .title {
-        font-size: 2em;
-    }
-
-    .buttons {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .cover-container img {
-        width: 100%;
-        height: auto;
+    .team-members {
+        flex-direction: column; /* Суреттерді тік орналастыру */
+        align-items: center; /* Ортасына орналастыру */
     }
 }
+.team-members {
+    display: flex;
+    flex-direction: column; /* Тік орналастыру */
+    align-items: center; /* Ортасына орналастыру */
+}
+.member-photo {
+    width: 90%; /* Экранның 90% ені */
+    height: auto; /* Биіктікті автоматты түрде анықтау */
+}
+
