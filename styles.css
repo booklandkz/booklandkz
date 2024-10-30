@@ -41,23 +41,24 @@ body {
 /* Батырмалар стилі */
 .buttons {
     display: flex;
-    gap: 130px;
+    gap: 30px; /* Батырмалардың арасындағы аралық */
     margin-left: 20px;
 }
 
 .small-button {
-    padding: 10px 20px;
-    background-color: transparent;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 1.4em;
-    transition: background-color 0.3s;
+    padding: 10px 20px; /* Ішкі аралық */
+    background-color: none; /* Батырманың фоны */
+    color: black; /* Жазудың түсі */
+    border: none; /* Шекарасын алып тастау */
+    border-radius: 50px; /* Бұрыштарын дөңгелектеу */
+    cursor: pointer; /* Тінтуір көрсеткішін батырмаға өзгертеді */
+    font-size: 1.3em; /* Жазу көлемі */
+    transition: background-color 0.3s, transform 0.3s; /* Анимация эффектісі */
 }
 
 .small-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2); /* Батырма үстіне келгенде түс өзгеруі */
+    transform: scale(1.05); /* Батырманың үлкеюі */
 }
 
 /* Кітап обложка суреттері */
