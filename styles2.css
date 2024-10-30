@@ -186,3 +186,25 @@ body {
     from { transform: translateX(-20px); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
 }
+
+/* Жауапты дизайн үшін */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cover-container img {
+        width: 100%;
+        height: auto;
+    }
+}
